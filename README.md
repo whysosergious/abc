@@ -2,4 +2,4 @@
 
 A demonstration of the aptBit Content Manager.
 
-Utilizing JavaScript async functionality for everything from data managment thgrough PDF to image conversion.
+Utilizing JavaScript async functionality for everything from data managment through PDF to image conversion.
