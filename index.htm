@@ -1,0 +1,1150 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!-- developer tools -->
+	<!-- <script type="text/javascript" src="!dev/live.js"></script> -->
+
+	<meta charset="utf-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no" /> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="theme-color" content="#13181b" />
+
+	<title>abc demo</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+   <script defer src="js/script.js"></script>
+
+</head>
+
+<!-- hiddent elements -->
+<!-- <input id="file-loader" type="file" name="fileLoader"> -->
+<input id="file-loader" name="fileLoader" type="file" accept="application/pdf" data-host="fileLoader" data-action="uploadFiles">
+<input id="media-loader" name="mediaLoader" type="file" accept="image/x-png,image/jpeg" data-host="mediaLoader" data-action="uploadMedia" multiple>
+
+<body>
+   <div id="nav-span">
+      <nav id="nav">
+         <img id="abcIcon" src="ass/icons/abc.svg"/>
+         <div class="nav-group">
+            <div class="icon">
+               <img class="iconimg" src="ass/img/user-thumb/demo.jpg" alt="Thumbnail chosen by the user">
+            </div>
+            <h4>demoUser</h4>
+         </div>
+
+         <div class="nav-group logout">
+            <img class="logout-icon" src="ass/icons/logout.svg" alt="Logout icon">
+            <h4>Logout</h4>
+         </div>
+
+      </nav>
+   </div>
+
+   <div id="primary-column">
+
+   <!-- Menues -->
+   <div id="menues" class="heading-container group-heading">
+      <h3 class="heading">Menues</h3>
+   </div>
+
+   <!-- <div id="lunch" class="element-container menu"> -->
+   <div id="lunch" class="element-container menu">
+      <div class="frame"></div>
+      <div class="img-heading">
+         <h2>Lunch</h2>
+         <h5 class="timestamp">Last updated .. by ..</h5>
+         <a class="small-button upload bordered"
+         data-host="lunch"
+         data-action="uploadFiles">
+            <img src="ass/icons/upload-white.svg" />
+            <h3>Upload New</h3>
+         </a>
+         <div class="button-group button-group-edit">
+            <a class="small-button save"
+            data-host="lunch"
+            data-action="saveData">
+               <img src="ass/icons/save-white.svg" />
+               <h3>Save</h3>
+            </a>
+            <a class="small-button close"
+            data-host="lunch"
+            data-action="cancelEdit">
+               <img src="ass/icons/cross-white.svg"/>
+               <h3>Close</h3>
+            </a>
+         </div>
+         <div class="button-group button-group-options">
+            <img class="dots"
+            data-host="lunch"
+            src="ass/icons/dots-white.svg"tabindex="0"/>
+            <a class="small-button view-files"
+            data-host="lunch"
+            data-action="editData">
+               <img src="ass/icons/look-white.svg" />
+               <h3>View</h3>
+            </a>
+         </div>
+
+      </div>
+      <div class="element-kernel">
+         <div class="heading-container">
+            <h4 class="heading">Lunchv.pdf</h4>
+            <a class="small-button pdffile" href="demofiles/menu/Lunch.pdf" target="_blanc"><img src="ass/icons/download.svg"/></a>
+            <h5 class="fileinfo">1 Page | 233kb</h5>
+         </div>
+      </div>
+
+      <div class="preview-container menu">
+
+         <div class="preview-item col-one">
+
+            <img src="demofiles/menu/lunch.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 1</h4>
+               <h5>233kb</h5>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <div id="drinks" class="element-container menu">
+      <div class="frame"></div>
+      <div class="img-heading">
+         <h2>Beer & Drinks</h2>
+         <h5 class="timestamp">Edited on .. by ..</h5>
+         <a class="small-button upload bordered"
+         data-host="drinks"
+         data-action="uploadFiles">
+            <img src="ass/icons/upload-white.svg" />
+            <h3>Upload New</h3>
+         </a>
+
+         <div class="button-group button-group-edit">
+            <a class="small-button save"
+            data-host="drinks"
+            data-action="saveData">
+               <img src="ass/icons/save-white.svg" />
+               <h3>Save</h3>
+            </a>
+            <a class="small-button close"
+            data-host="drinks"
+            data-action="cancelEdit">
+               <img src="ass/icons/cross-white.svg"/>
+               <h3>Close</h3>
+            </a>
+         </div>
+         <div class="button-group button-group-options">
+            <img class="dots"
+            data-host="drinks"
+            src="ass/icons/dots-white.svg"tabindex="0"/>
+            <a class="small-button view-files"
+            data-host="drinks"
+            data-action="editData" >
+               <img src="ass/icons/look-white.svg" />
+               <h3>View</h3>
+            </a>
+         </div>
+
+      </div>
+      <div class="element-kernel">
+         <div class="heading-container">
+            <h4 class="heading">Drinks-v20.pdf</h4>
+            <a class="small-button pdffile" href="demofiles/menu/Drinks-v20.pdf" target="_blanc"><img src="ass/icons/download.svg"/></a>
+            <h5 class="fileinfo">11 Pages | 2mb</h5>
+         </div>
+      </div>
+
+      <div class="preview-container menu">
+
+         <div class="preview-item">
+
+            <img src="demofiles/menu/drinks1.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 1</h4>
+               <h5>184kb</h5>
+            </div>
+         </div>
+
+         <div class="preview-item">
+
+            <img src="demofiles/menu/drinks2.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 2</h4>
+               <h5>140kb</h5>
+            </div>
+         </div>
+
+         <div class="preview-item">
+
+            <img src="demofiles/menu/drinks3.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 3</h4>
+               <h5>161kb</h5>
+            </div>
+         </div>
+
+         <div class="preview-item">
+
+            <img src="demofiles/menu/drinks4.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 4</h4>
+               <h5>214kb</h5>
+            </div>
+         </div>
+
+         <div class="preview-item">
+
+            <img src="demofiles/menu/drinks5.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 5</h4>
+               <h5>158kb</h5>
+            </div>
+         </div>
+
+         <div class="preview-item">
+
+            <img src="demofiles/menu/drinks6.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 6</h4>
+               <h5>191kb</h5>
+            </div>
+         </div>
+
+         <div class="preview-item">
+
+            <img src="demofiles/menu/drinks7.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 7</h4>
+               <h5>146kb</h5>
+            </div>
+         </div>
+
+         <div class="preview-item">
+
+            <img src="demofiles/menu/drinks8.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 8</h4>
+               <h5>198kb</h5>
+            </div>
+         </div>
+
+         <div class="preview-item">
+
+            <img src="demofiles/menu/drinks9.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 9</h4>
+               <h5>165kb</h5>
+            </div>
+         </div>
+
+         <div class="preview-item">
+
+            <img src="demofiles/menu/drinks10.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 10</h4>
+               <h5>213kb</h5>
+            </div>
+         </div>
+
+         <div class="preview-item">
+
+            <img src="demofiles/menu/drinks11.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 11</h4>
+               <h5>230kb</h5>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <div id="food" class="element-container menu">
+      <div class="frame"></div>
+      <div class="img-heading">
+         <h2>Alacarté</h2>
+         <h5 class="timestamp">Updated on .. by ..</h5>
+         <a class="small-button upload bordered"
+         data-host="food"
+         data-action="uploadFiles">
+            <img src="ass/icons/upload-white.svg" />
+            <h3>Upload New</h3>
+         </a>
+
+         <div class="button-group button-group-edit">
+            <a class="small-button save"
+            data-host="food"
+            data-action="saveData">
+               <img src="ass/icons/save-white.svg" />
+               <h3>Save</h3>
+            </a>
+            <a class="small-button close"
+            data-host="food"
+            data-action="cancelEdit">
+               <img src="ass/icons/cross-white.svg"/>
+               <h3>Close</h3>
+            </a>
+         </div>
+         <div class="button-group button-group-options">
+            <img class="dots"
+            data-host="food"
+            src="ass/icons/dots-white.svg"tabindex="0"/>
+            <a class="small-button view-files"
+            data-host="food"
+            data-action="editData" >
+               <img src="ass/icons/look-white.svg" />
+               <h3>View</h3>
+            </a>
+         </div>
+      </div>
+      <div class="element-kernel">
+         <div class="heading-container">
+            <h4 class="heading">food.pdf</h4>
+            <a class="small-button pdffile" href="demofiles/menu/food.pdf" target="_blanc"><img src="ass/icons/download.svg"/></a>
+            <h5 class="fileinfo">1 Page | 222kb</h5>
+         </div>
+      </div>
+
+      <div class="preview-container menu">
+
+         <div class="preview-item col-one">
+
+            <img src="demofiles/menu/food.jpg"/>
+
+            <div class="preview-item-info">
+               <h4>Page 1</h4>
+               <h5>222kb</h5>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+
+
+   <!-- Gallery -->
+   <div id="gallery" class="heading-container group-heading extra-margin">
+      <h3 class="heading">Gallery</h3>
+      <a id="saveMedia" class="small-button save"
+         data-host="gallery"
+         data-action="saveData">
+            <img src="ass/icons/save.svg" />
+            <h3>Save</h3>
+      </a>
+      <a class="small-button create" data-host="gallery" data-action="uploadMedia"><img src="ass/icons/plus.svg"/><h3>Upload</h3></a>
+   </div>
+   <div class="heading-container group-heading">
+      <h3 class="heading light">Public Images</h3>
+   </div>
+   <div class="media-grid">
+
+      <div id="gal-1" class="element-container">
+         <img src="demofiles/album/gal-1.jpg" class="gallery-media"/>
+      </div>
+
+      <div id="gal-2" class="element-container">
+         <img src="demofiles/album/gal-2.jpg" class="gallery-media"/>
+      </div>
+
+      <div id="gal-3" class="element-container">
+         <img src="demofiles/album/gal-3.jpg" class="gallery-media"/>
+      </div>
+
+      <div id="gal-4" class="element-container">
+         <img src="demofiles/album/gal-4.jpg" class="gallery-media"/>
+      </div>
+
+      <div id="gal-5" class="element-container">
+         <img src="demofiles/album/gal-5.jpg" class="gallery-media"/>
+      </div>
+
+      <div id="gal-6" class="element-container">
+         <img src="demofiles/album/gal-6.jpg" class="gallery-media"/>
+      </div>
+
+   </div>
+
+
+
+   <!-- secondary column -->
+   <div id="secondary-column">
+
+      <div id="reghours" class="element-container">
+         <div class="img-heading">
+            <h2>Welcome</h2>
+            <h1>demoUser</h1>
+            <h2>Demo Admin Panel</h2>
+         </div>
+         <div class="element-kernel">
+            <div class="heading-container extra-padding">
+               <h3 class="heading">Regular hours</h3>
+
+               <div class="button-group button-group-edit">
+                  <a class="small-button save"
+                  data-host="reghours"
+                  data-action="saveData">
+                     <img src="ass/icons/save.svg" />
+                     <h3>Save</h3>
+                  </a>
+                  <a class="small-button close"
+                  data-host="reghours"
+                  data-action="cancelEdit">
+                     <img src="ass/icons/cross.svg"/>
+                     <h3>Close</h3>
+                  </a>
+               </div>
+               <div class="button-group button-group-options">
+                  <img class="dots"
+                  data-host="reghours"
+                  src="ass/icons/dots-dark.svg"
+                  tabindex="0"/>
+                  <a class="small-button edit"
+                  data-host="reghours"
+                  data-action="editData">
+                     <img src="ass/icons/edit.svg" alt="Trashcan icon" />
+                     <h3>Edit</h3>
+                  </a>
+               </div>
+
+            </div>
+            <div id="monday" name="monday" class="element-content weekday">
+               <h4>Monday</h4>
+               <input class="alt-option checkbox" type="checkbox" name="altoption" />
+               <h4 class="alt-option">Closed</h4>
+               <input type="text" name="openHour" class="hours-input hours-text" placeholder="12" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = ''; "
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+               <label class="hours-sep hours-text">-</label>
+               <input type="text" name="closeHour" class="hours-input hours-text" placeholder="22" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';"
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+            </div>
+            <div id="tuesday" name="tuesday" class="element-content weekday">
+               <h4>Tuesday</h4>
+               <input class="alt-option checkbox" type="checkbox" name="altoption" />
+               <h4 class="alt-option">Closed</h4>
+               <input type="text" name="openHour" class="hours-input hours-text" placeholder="12" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = ''; "
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+               <label class="hours-sep hours-text">-</label>
+               <input type="text" name="closeHour" class="hours-input hours-text" placeholder="22" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';"
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+            </div>
+            <div id="wednesday" name="wednesday" class="element-content weekday">
+               <h4>Wednesday</h4>
+               <input class="alt-option checkbox" type="checkbox" name="altoption" />
+               <h4 class="alt-option">Closed</h4>
+               <input type="text" name="openHour" class="hours-input hours-text" placeholder="12" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = ''; "
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+               <label class="hours-sep hours-text">-</label>
+               <input type="text" name="closeHour" class="hours-input hours-text" placeholder="22" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';"
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+            </div>
+            <div id="thursday" name="thursday" class="element-content weekday">
+               <h4>Thursday</h4>
+               <input class="alt-option checkbox" type="checkbox" name="altoption" />
+               <h4 class="alt-option">Closed</h4>
+               <input type="text" name="openHour" class="hours-input hours-text" placeholder="12" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = ''; "
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+               <label class="hours-sep hours-text">-</label>
+               <input type="text" name="closeHour" class="hours-input hours-text" placeholder="22" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';"
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+            </div>
+            <div id="friday" name="friday" class="element-content weekday">
+               <h4>Friday</h4>
+               <input class="alt-option checkbox" type="checkbox" name="altoption" />
+               <h4 class="alt-option">Closed</h4>
+               <input type="text" name="openHour" class="hours-input hours-text" placeholder="12" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = ''; "
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+               <label class="hours-sep hours-text">-</label>
+               <input type="text" name="closeHour" class="hours-input hours-text" placeholder="22" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';"
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+            </div>
+            <div id="saturday" name="saturday" class="element-content weekday">
+               <h4>Saturday</h4>
+               <input class="alt-option checkbox" type="checkbox" name="altoption" />
+               <h4 class="alt-option">Closed</h4>
+               <input type="text" name="openHour" class="hours-input hours-text" placeholder="12" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = ''; "
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+               <label class="hours-sep hours-text">-</label>
+               <input type="text" name="closeHour" class="hours-input hours-text" placeholder="22" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';"
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+            </div>
+            <div id="sunday" name="sunday" class="element-content weekday">
+               <h4>Sunday</h4>
+               <input class="alt-option checkbox" type="checkbox" name="altoption" />
+               <h4 class="alt-option">Closed</h4>
+               <input type="text" name="openHour" class="hours-input hours-text" placeholder="12" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = ''; "
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+               <label class="hours-sep hours-text">-</label>
+               <input type="text" name="closeHour" class="hours-input hours-text" placeholder="22" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';"
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;"/>
+
+
+            </div>
+         </div>
+
+         <div class="edit-container options">
+            <div id="schedule" name="schedule" class="element-content borderless">
+               <h4><strong>Schedule from</strong></h4>
+               <input class="alt-option checkbox" type="checkbox" name="altoption" checked/>
+               <h4 class="alt-option">Today</h4>
+               <input type="text" name="dateDay" class="hours-input hours-text" list="days" placeholder="20" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = ''; "
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');">
+
+               <label class="hours-sep hours-text">/</label>
+               <input type="text" name="dateMonth" class="hours-input hours-text" list="months" placeholder="8" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';"
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');">
+
+               <label class="hours-sep hours-text">-</label>
+               <input type="text" name="dateYear" class="hours-input hours-text" list="years" placeholder="20" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';"
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');">
+
+            </div>
+         </div>
+      </div>
+
+      <!-- Business hours exceptions -->
+      <div id="exchours" class="heading-container group-heading subgroup">
+         <h3 class="heading light">Business hour exceptions</h3>
+         <a class="small-button create" data-host="exchours" data-action="addExceptionGroup" alt="Add a business hour exception">
+            <img src="ass/icons/plus.svg" alt="Plus icon" />
+            <h3>New Group</h3>
+         </a>
+      </div>
+
+      <div id="Christmas_-20$2" class="element-container exc-hours">
+         <div class="element-kernel">
+            <div class="heading-container">
+               <div class="title-group">
+                  <h4 name="exc_group_name" class="title editable bold" contenteditable="false" data-host="Christmas_-20$2" onfocus="requestAnimationFrame(() => document.execCommand('selectAll'));">Christmas -20</h4>
+                  <h5 class="summary timestamp">Nov 20th by Johnny</h5>
+               </div>
+
+               <div class="button-group button-group-edit">
+                  <a class="small-button save" data-host="Christmas_-20$2" data-action="saveData">
+                     <img src="ass/icons/save.svg">
+                     <h3>Save</h3>
+                  </a>
+                  <a class="small-button close" data-host="Christmas_-20$2" data-action="cancelEdit">
+                     <img src="ass/icons/cross.svg">
+                     <h3>Close</h3>
+                  </a>
+               </div>
+               <div class="button-group button-group-options">
+                  <img class="dots" data-host="Christmas_-20$2" src="ass/icons/dots-dark.svg" tabindex="0">
+                  <a class="small-button edit" data-host="Christmas_-20$2" data-action="editData">
+                     <img src="ass/icons/edit.svg" alt="Pen icon">
+                     <h3>Edit</h3>
+                  </a>
+                  <a class="small-button delete" data-host="Christmas_-20$2" data-action="deleteData"><img src="ass/icons/delete.svg" alt="Trashcan icon"><h3>Delete</h3></a>
+               </div>
+            </div>
+            <div id="Christmas_-20$2ln1" name="ln" class="element-content exception-line expendable" data-host="Christmas_-20$2">
+               <div class="date-wrapper">
+                  <input type="text" name="dateDay" class="hours-input date-text" list="days" placeholder="24" autocomplete="off" maxlength="2" onmousedown="
+                        placeholder = value == 0 ? value = placeholder : value = value;
+                        value = ''; " onkeyup="
+                        this.value=this.value.replace(/[^\d]/,'');" disabled="">
+
+                  <label class="hours-sep date-text">/</label>
+                  <input type="text" name="dateMonth" class="hours-input date-text" list="months" placeholder="12" autocomplete="off" maxlength="2" onmousedown="
+                        placeholder = value == 0 ? value = placeholder : value = value;
+                        value = '';" onkeyup="
+                        this.value=this.value.replace(/[^\d]/,'');" disabled="">
+
+                  <label class="hours-sep date-text">-</label>
+                  <input type="text" name="dateYear" class="hours-input date-text" list="years" placeholder="20" autocomplete="off" maxlength="2" onmousedown="
+                        placeholder = value == 0 ? value = placeholder : value = value;
+                        value = '';" onkeyup="
+                        this.value=this.value.replace(/[^\d]/,'');" disabled="">
+
+               </div>
+               <a class="icon-button delete" data-host="Christmas_-20$2ln1" data-action="deleteException"><img src="ass/icons/delete.svg" alt="Trashcan icon"></a>
+               <input class="alt-option checkbox" type="checkbox" name="altoption" disabled="" checked>
+               <h4 class="alt-option">Closed</h4>
+               <input type="text" name="openHour" class="hours-input hours-text" placeholder="12" autocomplete="off" maxlength="2" onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = ''; " onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;" disabled="">
+
+               <label class="hours-sep hours-text">-</label>
+               <input type="text" name="closeHour" class="hours-input hours-text" placeholder="22" autocomplete="off" maxlength="2" onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';" onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;" disabled="">
+
+            </div>
+
+
+         <div id="Christmas_-20$2ln2" name="ln" class="element-content exception-line expendable" data-host="Christmas_-20$2">
+               <div class="date-wrapper">
+                  <input type="text" name="dateDay" class="hours-input date-text" list="days" placeholder="25" autocomplete="off" maxlength="2" onmousedown="
+                        placeholder = value == 0 ? value = placeholder : value = value;
+                        value = ''; " onkeyup="
+                        this.value=this.value.replace(/[^\d]/,'');" disabled="">
+
+                  <label class="hours-sep date-text">/</label>
+                  <input type="text" name="dateMonth" class="hours-input date-text" list="months" placeholder="12" autocomplete="off" maxlength="2" onmousedown="
+                        placeholder = value == 0 ? value = placeholder : value = value;
+                        value = '';" onkeyup="
+                        this.value=this.value.replace(/[^\d]/,'');" disabled="">
+
+                  <label class="hours-sep date-text">-</label>
+                  <input type="text" name="dateYear" class="hours-input date-text" list="years" placeholder="20" autocomplete="off" maxlength="2" onmousedown="
+                        placeholder = value == 0 ? value = placeholder : value = value;
+                        value = '';" onkeyup="
+                        this.value=this.value.replace(/[^\d]/,'');" disabled="">
+
+               </div>
+               <a class="icon-button delete" data-host="Christmas_-20$2ln2" data-action="deleteException"><img src="ass/icons/delete.svg" alt="Trashcan icon"></a>
+               <input class="alt-option checkbox" type="checkbox" name="altoption" disabled="" checked>
+               <h4 class="alt-option">Closed</h4>
+               <input type="text" name="openHour" class="hours-input hours-text" placeholder="12" autocomplete="off" maxlength="2" onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = ''; " onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;" disabled="">
+
+               <label class="hours-sep hours-text">-</label>
+               <input type="text" name="closeHour" class="hours-input hours-text" placeholder="22" autocomplete="off" maxlength="2" onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';" onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');
+                     value > 24 ? value = placeholder : value = value;" disabled="">
+
+            </div></div>
+         <div class="edit-container options">
+            <div id="Christmas_-20$2options" name="options" class="element-content borderless" data-host="Christmas_-20$2">
+               <a class="small-button create" data-host="Christmas_-20$2" data-action="addException"><img src="ass/icons/plus.svg" alt="Plus icon"><h3>Add</h3></a>
+
+            </div>
+         </div>
+      </div>
+
+
+
+      <div id="msg-empty" class="element-container">
+         <div class="heading-container solo borderless">
+            <h4 class="disabled">Active exception information not available</h4>
+         </div>
+      </div>
+
+
+      <!-- Users -->
+      <div id="users" class="heading-container group-heading extra-margin">
+         <h3 class="heading">Users</h3>
+         <a class="small-button create" data-host="users" data-action="addUser"><img src="ass/icons/plus.svg" alt="Plus icon" /><h3>New</h3></a>
+      </div>
+
+      <div id="Johnny$2" name="newser" class="element-container user">
+         <div class="element-kernel">
+            <div class="heading-container">
+               <div class="icon">
+                  <img class="iconimg" src="ass/img/user-thumb/heresjohnny.jpg" alt="Thumbnail chosen by the user">
+               </div>
+               <div class="title-group">
+                  <h4 name="user_name" class="title editable bold" contenteditable="false" data-host="Johnny$2" onfocus="requestAnimationFrame(() => document.execCommand('selectAll'));">Johnny</h4>
+                  <h5 class="summary timestamp">Last active 03:47</h5>
+               </div>
+
+               <div class="button-group button-group-edit">
+                  <a class="small-button save" data-host="Johnny$2" data-action="saveData">
+                     <img src="ass/icons/save.svg">
+                     <h3>Save</h3>
+                  </a>
+                  <a class="small-button close" data-host="Johnny$2" data-action="cancelAndClose">
+                     <img src="ass/icons/cross.svg">
+                     <h3>Close</h3>
+                  </a>
+               </div>
+               <div class="button-group button-group-options">
+                  <img class="dots" data-host="Johnny$2" src="ass/icons/dots-dark.svg" tabindex="0">
+                  <a class="small-button edit" data-host="Johnny$2" data-action="editData">
+                     <img src="ass/icons/edit.svg" alt="Pen icon">
+                     <h3>Edit</h3>
+                  </a>
+                  <a class="small-button delete" data-host="Johnny$2" data-action="deleteData">
+                     <img src="ass/icons/delete.svg" alt="Trashcan icon">
+                     <h3>Delete</h3>
+                  </a>
+               </div>
+
+            </div>
+
+            <div id="Johnny$2info" name="info" class="element-content" data-host="Johnny$2">
+               <input type="text" class="formfield email" placeholder="johnnypickedaverylongemail@cdred.cp" disabled="">
+
+               <form class="role-container travi" name="roles">
+                  <input type="radio" class="role admin" name="user_role" value="admin" disabled="">
+                  <input type="radio" class="role editor" name="user_role" value="editor" disabled="" checked>
+                  <input type="radio" class="role slave" name="user_role" value="slave" disabled="">
+               </form>
+            </div>
+
+            <form class="passform">
+               <div id="Johnny$2pass" name="pass" class="element-content borderless valid" data-host="Johnny$2">
+                  <input class="show-pass checkbox" type="checkbox" name="show_pass" data-host="newser" data-inf="Show password" disabled="">
+                  <input class="formfield password" type="password" placeholder="Password" autocomplete="false" aria-hidden="true" disabled="">
+                  <h4 class="verifier"></h4>
+               </div>
+
+               <div id="Johnny$2repass" name="repass" class="element-content borderless valid" data-host="Johnny$2">
+                  <input class="formfield password repass" type="password" placeholder="Repeat password" autocomplete="false" aria-hidden="true" disabled="">
+                  <h4 class="verifier"></h4>
+               </div>
+            </form>
+         </div>
+
+         <div class="edit-container options">
+            <div id="Johnny$2Options" name="Options" class="element-content borderless" data-host="Johnny$2">
+               <a class="small-button edit-pass" name="passwordchange" data-host="Johnny$2" data-action="changePassword">
+                  <img src="ass/icons/edit.svg" alt="Plus icon">
+                  <h3>Change password</h3>
+               </a>
+               <a class="small-button cancel-pass" name="cancelpasswordchange" data-host="Johnny$2" data-action="cancelPassword">
+                  <img src="ass/icons/cross.svg" alt="Plus icon">
+                  <h3>Cancel password Change</h3>
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <div id="zergski$2" name="newser" class="element-container user">
+         <div class="element-kernel">
+            <div class="heading-container">
+               <div class="icon">
+                  <img class="iconimg" src="ass/img/user-thumb/zergski-ferret.jpg" alt="Thumbnail chosen by the user">
+               </div>
+               <div class="title-group">
+                  <h4 name="user_name" class="title editable bold" contenteditable="false" data-host="zergski$2" onfocus="requestAnimationFrame(() => document.execCommand('selectAll'));">zergski</h4>
+                  <h5 class="summary timestamp">Last active an hour ago</h5>
+               </div>
+
+               <div class="button-group button-group-edit">
+                  <a class="small-button save" data-host="zergski$2" data-action="saveData">
+                     <img src="ass/icons/save.svg">
+                     <h3>Save</h3>
+                  </a>
+                  <a class="small-button close" data-host="zergski$2" data-action="cancelAndClose">
+                     <img src="ass/icons/cross.svg">
+                     <h3>Close</h3>
+                  </a>
+               </div>
+               <div class="button-group button-group-options">
+                  <img class="dots" style="visibility: hidden; pointer-events: none;" data-host="zergski$2" src="ass/icons/dots-dark.svg" tabindex="0">
+                  <a class="small-button edit" data-host="zergski$2" data-action="editData">
+                     <img src="ass/icons/edit.svg" alt="Pen icon">
+                     <h3>Edit</h3>
+                  </a>
+                  <a class="small-button delete" data-host="zergski$2" data-action="deleteData">
+                     <img src="ass/icons/delete.svg" alt="Trashcan icon">
+                     <h3>Delete</h3>
+                  </a>
+               </div>
+
+            </div>
+
+            <div id="zergski$2info" name="info" class="element-content" data-host="zergski$2">
+               <input type="text" class="formfield email" placeholder="abc@zergski.com" disabled="">
+
+               <form class="role-container travi" name="roles">
+                  <input type="radio" class="role admin" name="user_role" value="admin" checked="" disabled="">
+                  <input type="radio" class="role editor" name="user_role" value="editor" disabled="">
+                  <input type="radio" class="role slave" name="user_role" value="slave" disabled="">
+               </form>
+            </div>
+
+            <form class="passform">
+               <div id="zergski$2pass" name="pass" class="element-content borderless valid" data-host="zergski$2">
+                  <input class="show-pass checkbox" type="checkbox" name="show_pass" data-host="newser" data-inf="Show password" disabled="">
+                  <input class="formfield password" type="password" placeholder="Password" autocomplete="false" aria-hidden="true" disabled="">
+                  <h4 class="verifier"></h4>
+               </div>
+
+               <div id="zergski$2repass" name="repass" class="element-content borderless valid" data-host="zergski$2">
+                  <input class="formfield password repass" type="password" placeholder="Repeat password" autocomplete="false" aria-hidden="true" disabled="">
+                  <h4 class="verifier"></h4>
+               </div>
+            </form>
+         </div>
+
+         <div class="edit-container options">
+            <div id="zergski$2Options" name="Options" class="element-content borderless" data-host="zergski$2">
+               <a class="small-button edit-pass" name="passwordchange" data-host="zergski$2" data-action="changePassword">
+                  <img src="ass/icons/edit.svg" alt="Plus icon">
+                  <h3>Change password</h3>
+               </a>
+               <a class="small-button cancel-pass" name="cancelpasswordchange" data-host="zergski$2" data-action="cancelPassword">
+                  <img src="ass/icons/cross.svg" alt="Plus icon">
+                  <h3>Cancel password Change</h3>
+               </a>
+            </div>
+         </div>
+      </div>
+
+
+      <div id="newser" name="newser" class="element-container user savelock pass-edit open btn-set-edit cloneski newbie">
+         <div class="element-kernel">
+            <div class="heading-container">
+               <div class="icon">
+                  <img class="iconimg" src="ass/img/user-thumb/canscanscans.jpg" alt="Thumbnail chosen by the user" />
+               </div>
+               <div class="title-group">
+                  <h4 name="user_name" class="title editable bold" contenteditable="false"
+                  data-host="newser" onfocus="requestAnimationFrame(() => document.execCommand('selectAll'));">User Name</h4>
+                  <h5 class="summary timestamp">New User</h5>
+               </div>
+
+               <div class="button-group button-group-edit">
+                  <a class="small-button save"
+                  data-host="newser"
+                  data-action="saveData">
+                     <img src="ass/icons/save.svg" />
+                     <h3>Save</h3>
+                  </a>
+                  <a class="small-button close"
+                  data-host="newser"
+                  data-action="cancelAndClose">
+                     <img src="ass/icons/cross.svg"/>
+                     <h3>Close</h3>
+                  </a>
+               </div>
+               <div class="button-group button-group-options">
+                  <img class="dots-cloneski"
+                  data-host="newser"
+                  src="ass/icons/dots-dark.svg"tabindex="0"/>
+                  <a class="small-button edit"
+                  data-host="newser"
+                  data-action="editData">
+                     <img src="ass/icons/edit.svg" alt="Pen icon" />
+                     <h3>Edit</h3>
+                  </a>
+                  <a class="small-button delete"
+                  data-host="newser"
+                  data-action="deleteData">
+                     <img src="ass/icons/delete.svg" alt="Trashcan icon" />
+                     <h3>Delete</h3>
+                  </a>
+               </div>
+
+            </div>
+
+            <div id="info" name="info" class="element-content">
+               <input type="text" class="formfield email" placeholder="Email"/>
+
+               <form class="role-container travi" name="roles">
+                  <input type="radio" class="role admin" name="user_role" value="admin" checked/>
+                  <input type="radio" class="role editor" name="user_role" value="editor"/>
+                  <input type="radio" class="role slave" name="user_role" value="slave"/>
+               </form>
+            </div>
+
+            <form class="passform">
+               <div id="pass" name="pass" class="element-content borderless">
+                  <input class="show-pass checkbox" type="checkbox" name="show_pass" data-host="newser" data-inf="Show password"/>
+                  <input class="formfield password" type="password" placeholder="Password" autocomplete="false" aria-hidden="true"/>
+                  <h4 class="verifier"></h5>
+               </div>
+
+               <div id="repass" name="repass" class="element-content borderless">
+                  <input class="formfield password repass" type="password" placeholder="Repeat password" autocomplete="false" aria-hidden="true"/>
+                  <h4 class="verifier"></h5>
+               </div>
+            </form>
+         </div>
+
+         <div class="edit-container options">
+            <div id="nedt" name="Options" class="element-content borderless">
+               <a class="small-button edit-pass" name="passwordchange" data-host="newser" data-action="changePassword">
+                  <img src="ass/icons/edit.svg" alt="Plus icon" />
+                  <h3>Change password</h3>
+               </a>
+               <a class="small-button cancel-pass" name="cancelpasswordchange" data-host="newser" data-action="cancelPassword">
+                  <img src="ass/icons/cross.svg" alt="Plus icon" />
+                  <h3>Cancel password Change</h3>
+               </a>
+            </div>
+         </div>
+      </div>
+
+
+   </div>
+
+
+   </div>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+<hidden>
+
+   <div class="preview-item loading preview-cloneski col-one col-two col-three">
+
+      <div class="preview-item-info">
+         <h4>page count</h4>
+         <h5>page size</h5>
+      </div>
+   </div>
+
+
+   <div id="exceptionCloneski" class="element-container exc-hours newbie">
+      <div class="element-kernel ">
+         <div class="heading-container">
+            <div class="title-group">
+               <h4 name="exc_group_name" class="title editable bold" contenteditable="false" data-host="exceptionCloneski" onfocus="requestAnimationFrame(() => document.execCommand('selectAll'));">Group Name</h4>
+               <h5 class="summary timestamp">Tap to edit name</h5>
+            </div>
+
+            <div class="button-group button-group-edit">
+               <a class="small-button save"
+               data-host="exceptionCloneski"
+               data-action="saveData">
+                  <img src="ass/icons/save.svg" />
+                  <h3>Save</h3>
+               </a>
+               <a class="small-button close"
+               data-host="exceptionCloneski"
+               data-action="cancelEdit">
+                  <img src="ass/icons/cross.svg"/>
+                  <h3>Close</h3>
+               </a>
+            </div>
+            <div class="button-group button-group-options">
+               <img class="dots-cloneski"
+               data-host="exceptionCloneski"
+               src="ass/icons/dots-dark.svg"
+               tabindex="0"/>
+               <a class="small-button edit"
+               data-host="exceptionCloneski"
+               data-action="editData">
+                  <img src="ass/icons/edit.svg" alt="Pen icon" />
+                  <h3>Edit</h3>
+               </a>
+               <a class="small-button delete" data-host="exceptionCloneski" data-action="deleteData"><img src="ass/icons/delete.svg" alt="Trashcan icon" /><h3>Delete</h3></a>
+            </div>
+         </div>
+         <div id="ln" name="ln" class="element-content exception-line expendable" data-host="exceptionCloneski">
+            <div class="date-wrapper">
+               <input type="text" name="dateDay" class="hours-input date-text" list="days" placeholder="20" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = ''; "
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');">
+
+               <label class="hours-sep date-text">/</label>
+               <input type="text" name="dateMonth" class="hours-input date-text" list="months" placeholder="08" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';"
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');">
+
+               <label class="hours-sep date-text">-</label>
+               <input type="text" name="dateYear" class="hours-input date-text" list="years" placeholder="20" autocomplete="off" maxlength="2" disabled
+                  onmousedown="
+                     placeholder = value == 0 ? value = placeholder : value = value;
+                     value = '';"
+                  onkeyup="
+                     this.value=this.value.replace(/[^\d]/,'');">
+
+            </div>
+            <a class="icon-button delete" data-host="exceptionLineCloneski" data-action="deleteException"><img src="ass/icons/delete.svg" alt="Trashcan icon" /></a>
+            <input class="alt-option checkbox" type="checkbox" name="altoption" />
+            <h4 class="alt-option">Closed</h4>
+            <input type="text" name="openHour" class="hours-input hours-text" placeholder="12" autocomplete="off" maxlength="2" disabled
+               onmousedown="
+                  placeholder = value == 0 ? value = placeholder : value = value;
+                  value = ''; "
+               onkeyup="
+                  this.value=this.value.replace(/[^\d]/,'');
+                  value > 24 ? value = placeholder : value = value;"/>
+
+            <label class="hours-sep hours-text">-</label>
+            <input type="text" name="closeHour" class="hours-input hours-text" placeholder="22" autocomplete="off" maxlength="2" disabled
+               onmousedown="
+                  placeholder = value == 0 ? value = placeholder : value = value;
+                  value = '';"
+               onkeyup="
+                  this.value=this.value.replace(/[^\d]/,'');
+                  value > 24 ? value = placeholder : value = value;"/>
+
+         </div>
+      </div>
+      <div class="edit-container options">
+         <div id="edt" name="options" class="element-content borderless">
+            <a class="small-button create" data-host="exceptionLineCloneski" data-action="addException"><img src="ass/icons/plus.svg" alt="Plus icon" /><h3>Add</h3></a>
+
+         </div>
+      </div>
+   </div>
+
+
+
+   <datalist id="days" name="days">
+      <option value="01"/><option value="02"/><option value="03"/>
+      <option value="04"/><option value="05"/><option value="06"/>
+      <option value="07"/><option value="08"/><option value="09"/>
+      <option value="10"/><option value="11"/><option value="12"/>
+      <option value="13"/><option value="14"/><option value="15"/>
+      <option value="16"/><option value="17"/><option value="18"/>
+      <option value="19"/><option value="20"/><option value="21"/>
+      <option value="22"/><option value="23"/><option value="24"/>
+      <option value="25"/><option value="26"/><option value="27"/>
+      <option value="28"/><option value="29"/><option value="30"/>
+      <option value="31"/>
+   </datalist>
+   <datalist id="months" name="months">
+      <option value="01"/>
+      <option value="02"/>
+      <option value="03"/>
+      <option value="04"/>
+      <option value="05"/>
+      <option value="06"/>
+      <option value="07"/>
+      <option value="08"/>
+      <option value="09"/>
+      <option value="10"/>
+      <option value="11"/>
+      <option value="12"/>
+   </datalist>
+   <datalist id="years" name="years">
+      <option value="20"/>
+      <option value="21"/>
+      <option value="22"/>
+      <option value="23"/>
+      <option value="24"/>
+      <option value="25"/>
+      <option value="26"/>
+      <option value="27"/>
+   </datalist>
+
+
+</hidden>
+
+
+
+
+
+</html>
